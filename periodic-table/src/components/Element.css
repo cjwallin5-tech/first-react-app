@@ -1,0 +1,45 @@
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
+}
+
+.element:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.element-number {
+  font-size: 8px;
+  opacity: 0.8;
+}
+
+.element-symbol {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.element-mass {
+  font-size: 7px;
+  opacity: 0.8;
+}
+
+.element-name {
+  font-size: 6px;
+  opacity: 0.8;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 2px;
+}
